@@ -1,46 +1,49 @@
-
 import java.util.Scanner;
 
 public class FunctionsAssignmentsTotorial {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 // Program 1
-        // System.out.print("Enter First Number: ");
-        // int a = sc.nextInt();
-        // System.out.print("Enter Second Number: ");
-        // int b = sc.nextInt();
-        // System.out.print("Enter Third Number: ");
-        // int c = sc.nextInt();
-        // maxAndMin(a, b, c);
+        System.out.print("Enter First Number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter Second Number: ");
+        int b = sc.nextInt();
+        System.out.print("Enter Third Number: ");
+        int c = sc.nextInt();
+        maxAndMin(a, b, c);
         // oddEvenProgram();
-        ageverify();
+        // ageverify();
+        // System.out.println(sumNum(a, b));
+        // System.out.print("Enter a number: ");
+        // int a  = sc.nextInt();
+        // System.out.println(factorial(a));
     }
 
 // 1. Define two methods to print the maximum and the minimum number respectively among three numbers entered by the user.
-    // static void  maxAndMin(int a,int b,int c){
-    //     int max;
+    static void  maxAndMin(int a,int b,int c){
+        int max;
         
-    //     if (a > b ) {
-    //         max = a;
-    //     }
-    //     else if (b > c) {
-    //         max = b;
-    //     }
-    //     else{
-    //         max = c;
-    //     }
+        if (a > b ) {
+            max = a;
+        }
+        else if (b > c) {
+            max = b;
+        }
+        else{
+            max = c;
+        }
 
-    //     int min = a;
-    //     if (b < min) {
-    //         min = b;
-    //     }
-    //     if (c<min) {
-    //         min = c;
-    //     }
+        int min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c<min) {
+            min = c;
+        }
 
-    //     System.out.format("Maximam Number form %d , %d and %d is = %d\n",a,b,c,max);
-    //     System.out.format("Minimun Number form %d , %d and %d is = %d\n",a,b,c,min);
-    // }
+        System.out.format("Maximam Number form %d , %d and %d is = %d\n",a,b,c,max);
+        System.out.format("Minimun Number form %d , %d and %d is = %d\n",a,b,c,min);
+    }
 
 // 2. Define a program to find out whether a given number is even or odd.
     // static void oddEvenProgram(){
@@ -72,4 +75,16 @@ public class FunctionsAssignmentsTotorial {
     // }
 
 // 4. Write a program to print the sum of two numbers entered by user by defining your own method.
+    // static int sumNum(int a,int b){
+    //     int sum = a+b;
+    //     return sum;
+    // }
+
+// 5. Write a program to print the factorial of a number by defining a method named 'Factorial'
+    // static int factorial(int n){
+    //     if (n == 0 || n == 1){
+    //         return 1;
+    //     }
+    //     return n * factorial(n-1);
+    // }
 }

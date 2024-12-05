@@ -1,3 +1,5 @@
+package code.preactic;
+
 public class NeonNumber {
     public static void main(String[] args) {
         neonNum(9);
@@ -16,5 +18,4 @@ public class NeonNumber {
         }
         // return num;
     }
-
 }

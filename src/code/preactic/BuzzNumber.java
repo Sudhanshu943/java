@@ -1,3 +1,5 @@
+package code.preactic;
+
 import java.util.Scanner;
 
 public class BuzzNumber {

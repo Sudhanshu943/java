@@ -4,18 +4,27 @@ import java.util.Scanner;
 
 class Game{
     private int count = 0;
-    private int userNumber;
-    private final int compNumber;
+    public int userNumber;
+    public int compNumber;
 
     public Game() {
         compNumber = (int)(Math.random()*100);
+        System.out.println(compNumber);
     }
     public void inputNumber(int n){
         userNumber = n;
     }
 
     public int isCorrectNumber(){
-        return Integer.compare(compNumber, userNumber);
+
+        if (compNumber == userNumber) {
+            return 0;
+        } else if (compNumber > userNumber) {
+            return -1;
+        }
+        else{
+            return 0;
+        }
     }
 
     public void setCount(){

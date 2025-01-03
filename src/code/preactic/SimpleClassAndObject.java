@@ -1,7 +1,8 @@
 package code.preactic;
 
     // Problem 1
-/* class Car{
+class Car{
+
     String make;
     int year;
 
@@ -147,7 +148,6 @@ class BankAccount{
         System.out.println("Bank Account: "+balance);
     }
 }
-*/
     // Problem 8
 class Employee{
     private int id;
@@ -191,27 +191,36 @@ class Employee{
 public class SimpleClassAndObject {
     public static void main(String[] args){
     // Problem 1
-/*        Car car = new Car("RR",1998);
+        System.out.println("Problem 1");
+        Car car = new Car("RR",1998);
         System.out.println("Car Make: "+car.make);
         System.out.println("Car Year: "+car.year);
+        System.out.println();
 
     // Problem 2
+        System.out.println("Problem 2");
         Student one = new Student("Sudhanshu Thapa", 21);
         one.displayDetail();
+        System.out.println();
 
     // Problem 3
+        System.out.println("Problem 3");
         Rectangle rectangle = new Rectangle(2,5);
         System.out.println("Rectangle Dimensions:");
         System.out.println("Length: " + rectangle.length + ", Width: " + rectangle.width);
         rectangle.displayOutput();;
+        System.out.println();
 
     // Problem 4
+        System.out.println("Problem 4");
         Person person = new Person("Sudhanshu Thapa",21);
         person.displayDetails();
         Person person2 = new Person();
         person2.displayDetails();
+        System.out.println();
 
     // Problem 5
+        System.out.println("Problem 5");
         Book book = new Book();
         book.displayDetails();
 
@@ -219,27 +228,33 @@ public class SimpleClassAndObject {
 
         Book book2 = new Book("JAVA is Love","Aditya Dimri",2021);
         book2.displayDetails();
+        System.out.println();
 
     // Problem 6
+        System.out.println("Problem 6");
         Circle circle = new Circle(45.5);
         System.out.println("Circle Radius: "+circle.getRadius());
         circle.displayOutput();
+        System.out.println();
 
     // Problem 7
+        System.out.println("Problem 7");
         BankAccount acc = new BankAccount();
         acc.displayOutput();
 
         BankAccount acc2 = new BankAccount(4877536);
         acc2.displayOutput();
 
-*/
+        System.out.println();
+
     // Problem 8
+        System.out.println("Problem 8");
         Employee person1 = new Employee();
         person1.displayOutput();
 
         System.out.println();
 
-        Employee person2 = new Employee(54,"Sudhanshu Thapa", 48000000);
-        person2.displayOutput();
+        Employee perso2 = new Employee(54,"Sudhanshu Thapa", 48000000);
+        perso2.displayOutput();
     }
 }
